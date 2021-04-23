@@ -7,7 +7,7 @@ services:
    db:
      image: mariadb:10.5.9
      volumes:
-       - nom_entreprise_wordpress_mysql:/var/lib/mysql
+       - wordpress_nom_entreprise_mysql:/var/lib/mysql
      restart: always
      environment:
        MYSQL_ROOT_PASSWORD: ${MYSQL_DATABASE_PASSWORD}
